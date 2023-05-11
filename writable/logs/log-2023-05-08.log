@@ -1,0 +1,42 @@
+CRITICAL - 2023-05-08 13:40:01 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Autoloader\Autoloader.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-08 13:41:35 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Autoloader\Autoloader.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-08 14:56:50 --> Undefined variable $fileName
+in APPPATH\Views\product\edit.php on line 15.
+ 1 APPPATH\Views\product\edit.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileName', 'APPPATH\\Views\\product\\edit.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('product/edit', [], true)
+ 5 APPPATH\Controllers\Product.php(94): view('product/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 14:57:27 --> Undefined variable $fileName
+in APPPATH\Views\product\edit.php on line 15.
+ 1 APPPATH\Views\product\edit.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileName', 'APPPATH\\Views\\product\\edit.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('product/edit', [], true)
+ 5 APPPATH\Controllers\Product.php(94): view('product/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 14:58:08 --> Undefined variable $fileName
+in APPPATH\Views\product\edit.php on line 15.
+ 1 APPPATH\Views\product\edit.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileName', 'APPPATH\\Views\\product\\edit.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('product/edit', [], true)
+ 5 APPPATH\Controllers\Product.php(94): view('product/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Product->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
