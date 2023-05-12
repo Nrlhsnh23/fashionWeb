@@ -8,27 +8,27 @@ class User extends BaseController
 {
     public function index()
     {
-        return view('layouts/base');
+        return view('/base/baseHome');
     }
 
     public function fashion()
     {
-        return view('layouts/baseFashion');
+        return view('base/baseFashion');
     }
 
     public function beauty()
     {
-        return view('layouts/baseBeauty');
+        return view('base/baseBeauty');
     }
 
     public function lifestyle()
     {
-        return view('layouts/baseLifestyle');
+        return view('base/baseLifestyle');
     }
     
     public function home()
     {
-        return view('layouts/base');
+        return view('base/baseHome');
     }
     
 

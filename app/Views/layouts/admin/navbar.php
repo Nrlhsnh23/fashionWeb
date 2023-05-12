@@ -8,7 +8,7 @@
                     </form>
 
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item">
+                        <li class="row justify-content-right">
                             <span class="mr-2 d-none d-lg-inline text-gray-900 large">Douglas McGee</span>
                         </li>
 

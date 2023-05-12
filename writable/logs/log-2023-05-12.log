@@ -1,0 +1,45 @@
+CRITICAL - 2023-05-12 07:19:30 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Autoloader\Autoloader.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-12 08:03:12 --> Invalid file: "layouts/homehomeUser/content-section3.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/homehomeUser/content-section3.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/homehomeUser/content-section3', null, true)
+ 3 APPPATH\Views\base\baseHome.php(16): CodeIgniter\View\View->include('layouts/homehomeUser/content-section3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\base\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('base/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(11): view('base/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 08:03:16 --> Invalid file: "layouts/homehomeUser/content-section3.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/homehomeUser/content-section3.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/homehomeUser/content-section3', null, true)
+ 3 APPPATH\Views\base\baseHome.php(16): CodeIgniter\View\View->include('layouts/homehomeUser/content-section3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\base\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('base/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(11): view('base/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 08:05:45 --> Invalid file: "layouts/homehomeUser/content-section3.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/homehomeUser/content-section3.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/homehomeUser/content-section3', null, true)
+ 3 APPPATH\Views\base\baseHome.php(16): CodeIgniter\View\View->include('layouts/homehomeUser/content-section3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\base\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/base/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(11): view('/base/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

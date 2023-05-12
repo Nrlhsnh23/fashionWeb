@@ -1,4 +1,4 @@
-<?= $this->extend('base/login/base2') ?>
+<?= $this->extend('base/baseLogin') ?>
 <?= $this->section('content') ?>
 
 <div class="container">

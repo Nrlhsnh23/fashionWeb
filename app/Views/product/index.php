@@ -1,14 +1,19 @@
-<?= $this->extend('base/admin/base') ?>
+<?= $this->extend('base/baseAdmin') ?>
 <?= $this->section('content') ?>
-<div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                                <a class="nav-link" href="/product/new">Create Berita </a> 
-                            </h6>
+
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <div class="row">     
+                        <div class="col-md-10">
+                        <h6 class=" font-weight-bold text-primary"> List berita.   </h6>
                         </div>
 
-                        <h6 class="row justify-content-center py-3 m-0 font-weight-bold text-primary">List berita  </h6>
-
+                        <div class="col-md-2">
+                        <a class="btn btn-primary btn-sm float-end" href="/product/new"> Create Berita </a> 
+                        </div>
+                    </div>
+                </div>
+                        
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -45,11 +50,9 @@
                                             <td>
                                                 <div class="btn-group " role="group " aria-label="Basic example ">
                                                     <form action="/product/<?= $item['id'] ?>" method="POST" onsubmit="return confirm(`Are you sure?`)">
-                                                        <a href="/product/<?= $item['id'] ?>/edit" class="btn btn-info text-white "><i class='bx bx-pencil'></i></a>
-                                                        <input type="hidden" name="_method" value="DELETE" />
-                                                        <button class="btn btn-danger text-white" type="submit">
-                                                            <i class='bx bx-trash'></i>
-                                                        </button>
+
+                                                        <a href="/product/<?= $item['id'] ?>/edit" class="btn btn-success btn-sm "> Edit </a>
+                                                        <input type="hidden" name="_method" value="DELETE" /> <button class="btn btn-danger btn-sm" type="submit"> Delete </button>
                                                     </form>
                                                 </div>
                                             </td>
@@ -58,11 +61,12 @@
                                     </tbody>
                                 </table>
                             </div>
-
-                            <div class="col-12">
-                            <?= $pager->links('products', 'custom_pagination') ?>
-                            </div>
-
                         </div>
-</div>
+
+                        <div class="col-12">
+                        <?= $pager->links('products', 'custom_pagination') ?>
+                        </div>
+
+            </div>
+
 <?= $this->endSection() ?>

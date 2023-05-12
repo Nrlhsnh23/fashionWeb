@@ -1,4 +1,4 @@
-<?= $this->extend('base/admin/base') ?>
+<?= $this->extend('base/baseAdmin') ?>
 
 <?= $this->section('content') ?>
 <div class="container mt-5">
@@ -11,6 +11,11 @@
 
                 <div class="form-group">
                     <label for="example-product-photo">Photo</label>
+
+                    <div>
+                    <img src="<?= base_url('photos/'.$data['photo']) ?>" alt="Product Image" width="300px" height="300px" >
+                    </div>
+
                     <input type="file" class="form-control" id="example-product-photo" aria-describedby="photoHelp" 
                         placeholder="Enter photo" required name="photo" value="<?= $data['photo'] ?>">
                 </div>
@@ -24,7 +29,7 @@
                 <div class="form-group">
                     <label for="example-product-caption">Caption</label>
                     <textarea type="input" rows="15" class="form-control" id="example-product-caption" aria-describedby="emailHelp" 
-                        placeholder="Enter caption" required name="caption" value="<?= $data['caption'] ?>" >
+                        placeholder="Enter caption" required name="caption" > <?= $data['caption'] ?>
                     </textarea>
                 </div>
 
@@ -37,7 +42,11 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit </button>
+                <a href="<?= base_url('product') ?>" class="btn btn-danger btn-primary"> Back </a>
+                </div>
+
             </form>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?= $this->extend('base/regis/base3') ?>
+<?= $this->extend('base/baseRegis') ?>
 <?= $this->section('content') ?>
 
 <div class="container">

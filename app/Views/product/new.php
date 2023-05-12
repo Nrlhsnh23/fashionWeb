@@ -1,4 +1,4 @@
-<?= $this->extend('base/admin/base') ?>
+<?= $this->extend('base/baseAdmin') ?>
 <?= $this->section('content') ?>
 <div class="container mt-5">
     <div class="row mb-4">
@@ -34,7 +34,11 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit </button>
+                <a href="<?= base_url('product') ?>" class="btn btn-danger btn-primary float-end"> Back </a>
+                </div>
+
             </form>
         </div>
     </div>
