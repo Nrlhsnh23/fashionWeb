@@ -13,7 +13,7 @@
             <div class="col-lg-9">
                 <div class="mb-4">
                     <h1 class="fw-bolder mb-1"> <?= $product['title']; ?> </h1>
-                    <a class="badge bg-secondary text-decoration-none link-light" href="#!"> <?= $product['category']; ?></a>
+                    <a class="badge bg-secondary text-decoration-none link-light"> <?= $product['category']; ?></a>
                 </div>
 
                 <div class="mb-4">
