@@ -71,7 +71,7 @@ class Product extends ResourceController
             "title" => $this->request->getPost('title'),
             "caption" => $this->request->getPost('caption'),
             "category" => $this->request->getPost('category'),
-           
+            
         ];
 
         $this->productModel->insert($payload);
@@ -102,6 +102,14 @@ class Product extends ResourceController
      */
     public function update($id = null)
     {
+       $photo = $this->request->getFile('photo');
+
+       if ($photo) {
+            $fileName = $photo->getRandomName(); // Mendapatkan nama file baru secara acak
+
+            $photo->move('photos', $fileName); // Memindahkan file ke public/photos dengan nama acak
+        }
+        
         $payload = [
             "photo" => $fileName, 
             "title" => $this->request->getPost('title'),

@@ -83,7 +83,7 @@ class Login extends ResourceController
             $this->session->set('name', $user['name']);
             $this->session->set('loggedIn', true);
     
-            return redirect()->to('/product');
+            return redirect()->to('/dashboard');
         } catch(\Exception $e) {
             return redirect()->to(previous_url());
         }

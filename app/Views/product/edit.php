@@ -6,13 +6,13 @@
         <div class="col-12">
             <h5 class="mb-4">Update Berita <?= $data['title'] ?></h5>
 
-            <form action="/product/<?= $data['id'] ?>" method="post">
+            <form action="/product/<?= $data['id'] ?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_method" value="put" />
 
                 <div class="form-group">
                     <label for="example-product-photo">Photo</label>
 
-                    <div>
+                    <div class="mb-3">
                     <img src="<?= base_url('photos/'.$data['photo']) ?>" alt="Product Image" width="300px" height="300px" >
                     </div>
 

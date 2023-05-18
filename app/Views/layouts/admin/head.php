@@ -17,3 +17,4 @@
 
     <!-- Custom styles for this page -->
     <link href="/assets/admin//assets/admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

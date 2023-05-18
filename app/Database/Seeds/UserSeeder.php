@@ -18,9 +18,9 @@ class UserSeeder extends Seeder
         $this->db->table('users')->insert($data);
 
         $data = [
-            'name' => 'Test 2',
-            'email'    => 'test2@mail.com',
-            'password'    => md5("secret123"),
+            'name' => 'Mutiara',
+            'email'    => 'Mutiaratama.azza@mail.com',
+            'password'    => md5("secret"),
         ];
 
         // Simple Queries

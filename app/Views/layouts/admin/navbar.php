@@ -7,9 +7,14 @@
                         </button>
                     </form>
 
+                         <ul class="navbar-nav ml-auto">
+
                         <!-- Nav Item - User Information -->
-                        <li class="row justify-content-right">
-                            <span class="mr-2 d-none d-lg-inline text-gray-900 large">Douglas McGee</span>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['name']; ?></span>
+                            </a>
+                            
                         </li>
 
                     </ul>

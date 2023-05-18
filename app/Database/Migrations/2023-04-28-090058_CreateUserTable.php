@@ -32,6 +32,7 @@ class CreateUserTable extends Migration
         $this->forge->createTable('users', true); //If NOT EXISTS create table products
     }
 
+
     public function down()
     {
         $this->forge->dropTable('users', true); //If Exists drop table products

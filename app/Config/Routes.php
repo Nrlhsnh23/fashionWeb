@@ -31,18 +31,21 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('product');
+    $routes->resource('dashboard');
 });
 
 $routes->resource('register');
 $routes->resource('login');
 $routes->resource('logout');
 
-$routes->get('/', 'Home::index');
+$routes->get('/', 'User::home');
 $routes->get('/user', 'User::index');
 $routes->get('/user/fashion', 'User::fashion');
 $routes->get('/user/beauty', 'User::beauty');
 $routes->get('/user/lifestyle', 'User::lifestyle');
 $routes->get('/user/home', 'User::home');
+
+$routes->get('/user/detail/(:any)', 'User::detail/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

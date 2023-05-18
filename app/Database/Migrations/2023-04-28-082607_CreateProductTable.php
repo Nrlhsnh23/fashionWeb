@@ -16,6 +16,7 @@ class CreateProductTable extends Migration
             ],
             "photo" => [
                 "type"=> "TEXT",
+                "null"=> true,
             ],
             "title" => [
                 "type"=> "VARCHAR",
@@ -27,7 +28,7 @@ class CreateProductTable extends Migration
             ],
             "category" => [
                 "type"=> "VARCHAR",
-                "constraint" => "200",
+                "constraint" => "50",
             ],
         ];
         $this->forge->addKey('id', true);
