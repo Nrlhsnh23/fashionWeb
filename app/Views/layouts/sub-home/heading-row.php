@@ -1,5 +1,4 @@
  <?php if(isset($product)) { ?>
-
  	<div class="row mb-5">
  		<div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="<?= base_url('photos/') . $product['photo']; ?>" style="width:100%;height: 350px;" /></div>
  		<div class="col-lg-5">

@@ -71,9 +71,11 @@ public function home()
 public function detail($id)
 {
     $product = $this->productModel->where('id', $id)->first();
+    $products = $this->productModel->orderBy('id', 'desc')->findAll(1);
 
     $data = [
-        'product' => $product
+        'product' => $product,
+        'products' => $products
     ];
 
     if($id != 0){
