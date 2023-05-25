@@ -2,7 +2,8 @@
     <div class="container px-5">
         <div class="row gx-4 gx-lg-5 mt-5">
             <h1 align="center" class="text-primary">Blogs</h1>
-        <?php foreach($products as $product) : ?>
+        
+            <?php foreach($products as $product) :  ?>
             <div class="col-md-4 mt-3 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
@@ -15,8 +16,9 @@
                     <div class="card-footer"> <a class="btn btn-primary" href="user/detail/<?= $product['id']; ?>">Read More.</a></div>
                 </div>
             </div>
-        <?php endforeach; ?>
 
+            <?php endforeach; ?>
+            
     </div>
 </div>
 </section>

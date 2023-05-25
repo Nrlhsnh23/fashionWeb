@@ -12,7 +12,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['name']; ?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 bold"><?= $_SESSION['name']; ?></span>
                             </a>
                             
                         </li>

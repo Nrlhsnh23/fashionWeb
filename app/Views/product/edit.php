@@ -4,7 +4,7 @@
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12">
-            <h5 class="mb-4">Update Berita <?= $data['title'] ?></h5>
+            <h5 class="mb-4" align=center>Update Berita <?= $data['title'] ?></h5>
 
             <form action="/product/<?= $data['id'] ?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_method" value="put" />
@@ -42,6 +42,7 @@
                     </select>
                 </div>
 
+                <br>
                 <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit </button>
                 <a href="<?= base_url('product') ?>" class="btn btn-danger btn-primary"> Back </a>

@@ -7,7 +7,7 @@
         <!-- Navigation-->
         <?= $this->include('layouts/home-user/navigation') ?>
         <!-- Page Content-->
-        <div class="container px-4 px-lg-5" style="margin-top: 150px;">
+        <div class="container px-4 px-lg-5" style="margin-top: 180px;">
             <!-- Heading Row-->
             <?= $this->include('layouts/sub-home/heading-row') ?>
             <!-- Content Row-->

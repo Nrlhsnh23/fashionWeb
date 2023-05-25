@@ -3,7 +3,7 @@
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12">
-            <h5 class="mb-4">Create Berita</h5>
+            <h5 class="mb-4" align=center >Create Berita</h5>
 
             <form action="/product" method="post" enctype="multipart/form-data">
 
@@ -34,6 +34,7 @@
                     </select>
                 </div>
 
+                <br>
                 <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit </button>
                 <a href="<?= base_url('product') ?>" class="btn btn-danger btn-primary float-end"> Back </a>
