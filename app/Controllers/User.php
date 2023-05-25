@@ -21,7 +21,7 @@ public function index()
 public function fashion()
 {
     $products = $this->productModel->where('category', 'Tren_Fashion')->findAll();
-    $product = $this->productModel->where('category', 'Tren_Fashion')->orderBy('id', 'desc')->first();
+    $product = $this->productModel->where('category', 'Tren_Fashion')->first();
 
     $data = [
         'products' => $products,
@@ -34,7 +34,7 @@ public function fashion()
 public function beauty()
 {
     $products = $this->productModel->where('category', 'Beauty')->findAll();
-    $product = $this->productModel->where('category', 'Beauty')->orderBy('id', 'desc')->first();
+    $product = $this->productModel->where('category', 'Beauty')->first();
 
     $data = [
         'products' => $products,
@@ -47,7 +47,7 @@ public function beauty()
 public function lifestyle()
 {
     $products = $this->productModel->where('category', 'Life_Culture')->findAll();
-    $product = $this->productModel->where('category', 'Life_Culture')->orderBy('id', 'desc')->first();
+    $product = $this->productModel->where('category', 'Life_Culture')->first();
 
     $data = [
         'products' => $products,
