@@ -26,10 +26,6 @@
                 <a href="/" class="btn btn-primary"> Back to home </a>
                 </div> 
 
-                <div class="col-lg-12 mt-5">
-                <a href="/" class="btn btn-primary"> Back to home </a>
-                </div> 
-
     </div>
             
     <!-- Footer-->

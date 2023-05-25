@@ -14,4 +14,15 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+
+<script>
+   ClassicEditor
+       .create( document.querySelector( '#example-product-caption' ) )
+       .catch( error => {
+           console.error( error );
+       } );
+</script>
+
     
