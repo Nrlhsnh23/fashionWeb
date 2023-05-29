@@ -5,7 +5,7 @@
                 <div class="card-header py-3">
                     <div class="row">     
                         <div class="col-md-10">
-                        <h6 class=" font-weight-bold text-primary"> List berita.   </h6>
+                        <h3 class="font-weight-bold text-primary">List berita.   </h3>
                         </div>
 
                         <div class="col-md-2">
@@ -44,7 +44,7 @@
                                             <td><?= $no += 1; ?></td>
                                             <td><img src="/photos/<?= $item['photo'] ?>" alt="" width=100 height=100></td>
                                             <td><?= $item['title'] ?></td>
-                                            <td><?= $item['caption'] ?></td>  
+                                            <td><?= substr($item['caption'], 0, 300) ?> .....</td>  
                                             <td><?= $item['category'] ?></td>
                         
                                             <td>

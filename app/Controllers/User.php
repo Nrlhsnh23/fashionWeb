@@ -91,27 +91,27 @@ public function detail($id)
     return view('base/detailProduct', $data);
 }
 
-public function detailSearch($id = null){
-
+public function detailSearch($id = null)
+{
     $this->ProductModel = new ProductModel();
-
+    
     $data = [
-        'data' => $this->ProductModel->find($id),
+        'products' => $this->productModel->find($title),
     ];
-    echo view('base/detailProduct', $data);
+    return view('base/baseHome', $data);
+
 }
 
 public function search()
-{
-    $searchTerm = $this->request->getGet('search');
-    $productModel = new ProductModel();
+    {
 
-    // Perform the search query using the $searchTerm
-    $results = $productModel->searchByName($searchTerm);
-
-    // Pass the results to the view
-    echo view('base/detailProduct', ['results' => $results]);
-}
+        $product = new ProductModel();
+        $cari = $this->request->getGet('cari');
+        
+        $data = $product->searchByName($cari)->findAll();
+        return view('base/baseSearch', ['data' => $data]);
+    
+    }
 
 
 }

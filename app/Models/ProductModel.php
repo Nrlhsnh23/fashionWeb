@@ -39,4 +39,14 @@ class ProductModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function searchByName($cari = null)
+    {
+        if($cari != ''){
+            return $this->like('title', $cari)
+            ->orlike('caption', $cari)
+            ->orlike('category', $cari);
+        }
+    }
+
 }

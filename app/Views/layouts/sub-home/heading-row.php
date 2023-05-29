@@ -15,5 +15,4 @@
  			<h1 align="center">Halaman Kosong</h1>
  		</div>
  	</div>
-
- 	<?php } ?>
+<?php } ?>
