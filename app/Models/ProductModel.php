@@ -40,11 +40,11 @@ class ProductModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+//logic model db search
     public function searchByName($cari = null)
     {
         if($cari != ''){
             return $this->like('title', $cari)
-            ->orlike('caption', $cari)
             ->orlike('category', $cari);
         }
     }

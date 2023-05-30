@@ -13,6 +13,7 @@
             </button>
         </div>
 
+        <!-- tampilan untuk tombol search -->
         <form action="<?php echo base_url('/user/search')?>" action="GET" method="GET">
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <div class="container px-5">
@@ -26,8 +27,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            </form>
+        </div>
+        </form>
  
             <ul class="navbar-nav ms-auto">
                 <li class="navbar-brand"><a class="nav-link" href="/user/fashion">FASHION</a></li>

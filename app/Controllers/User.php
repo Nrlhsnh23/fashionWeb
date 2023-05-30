@@ -91,17 +91,7 @@ public function detail($id)
     return view('base/detailProduct', $data);
 }
 
-public function detailSearch($id = null)
-{
-    $this->ProductModel = new ProductModel();
-    
-    $data = [
-        'products' => $this->productModel->find($title),
-    ];
-    return view('base/baseHome', $data);
-
-}
-
+// logic untuk search 
 public function search()
     {
 

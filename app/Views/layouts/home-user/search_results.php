@@ -1,3 +1,4 @@
+<!-- tampilan hasil search -->
 <section>
     <div class="container px-5">
         <div class="row gx-8 gx-lg-7 mt-7">
