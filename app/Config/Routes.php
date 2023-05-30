@@ -47,6 +47,7 @@ $routes->get('/user/home', 'User::home');
 
 $routes->get('/user/search', 'User::search');
 $routes->get('/user/detail/(:any)', 'User::detail/$1');
+$routes->get('/user/user/detail/(:any)', 'User::detail/$1');
 $routes->get('/user/detailSearch/(:segment)', 'User::detailSearch/$1');
 
 /*
